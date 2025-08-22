@@ -6,6 +6,7 @@ import * as Yup from 'yup'
 import { motion } from 'framer-motion'
 import React from "react";
 import { Mail, Phone, Facebook, Instagram, GithubIcon } from 'lucide-react';
+import { toast } from 'sonner'
 
 const schema = Yup.object({
   firstName: Yup.string().min(2, 'Trop court').required('Requis'),
@@ -27,7 +28,7 @@ export default function ContactSection() {
   const initialValues: Values = { firstName: '', lastName: '', email: '', message: '' }
 
   return (
-    <section className="relative py-12">
+    <section className="relative">
       <motion.div {...fade(0.02)} className="text-center mb-12">
         <p className="text-md lg:text-xl font-medium text-orange-600">Contactez moi</p>
         <h2 className="mt-6 text-3xl font-extrabold tracking-tight sm:text-4xl">
@@ -41,11 +42,23 @@ export default function ContactSection() {
           <Formik
             initialValues={initialValues}
             validationSchema={schema}
-            onSubmit={async (values, { resetForm }) => {
-              // 👉 Intègre ici ton envoi (API route, Resend, etc.)
-              console.log('Contact form:', values)
-              resetForm()
-              alert('Merci ! Votre message a été envoyé.')
+            onSubmit={async (values, { resetForm, setSubmitting }) => {
+              try {
+                const res = await fetch('/api/contact', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(values),
+                })
+                const json = await res.json()
+                if (!res.ok || !json.ok) throw new Error(json.error || 'Envoi impossible')
+
+                resetForm()
+                toast.success('✅ Merci ! Votre message a été envoyé.')
+              } catch (e: any) {
+                toast.error(`❌ Erreur : ${e.message || 'Veuillez réessayer.'}`)
+              } finally {
+                setSubmitting(false)
+              }
             }}
           >
             {({ isSubmitting }) => (

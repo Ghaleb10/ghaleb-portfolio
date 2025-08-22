@@ -3,6 +3,7 @@ import './globals.css'
 import { ThemeProvider } from '../components/ThemeProvider'
 import ResponsiveNavbar from '../components/ResponsiveNavbar'
 import React from "react"
+import { Toaster } from 'sonner'
 
 export const metadata: Metadata = {
   title: 'Ghaleb - Portfolio – Dev React.js',
@@ -48,6 +49,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </footer>
         </ThemeProvider>
+
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   )
