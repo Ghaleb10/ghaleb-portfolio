@@ -32,7 +32,7 @@ export default function AboutSection({
   email = 'example@gmail.com',
   stats = [
     { label: 'Projets complétés', value: '750+' },
-    { label: 'Secteurs couverts', value: '25+' },
+    // { label: 'Secteurs couverts', value: '25+' },
     { label: "Années d'expérience", value: '16+' },
   ],
 }: Props) {
@@ -100,7 +100,7 @@ export default function AboutSection({
           {/* Stats */}
           <motion.div
             {...fadeUp(0.1)}
-            className="grid grid-cols-3 gap-4 sm:gap-6 md:max-w-md"
+            className="grid grid-cols-2 gap-4 sm:gap-6 md:max-w-md"
             role="list"
             aria-label="Chiffres clés"
           >

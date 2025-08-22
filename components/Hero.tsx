@@ -12,7 +12,7 @@ const fadeUp = (d = 0) => ({
 
 export function Hero() {
   return (
-    <section className="w-full h-screen overflow-hidden text-white">
+    <section className="w-full min-h-screen lg:max-h-screen overflow-hidden text-white">
       {/* décor de fond */}
       <div
         aria-hidden
@@ -94,8 +94,8 @@ export function Hero() {
               <Image
                 src="/me.jpg"
                 alt="Portrait"
-                width={850}
-                height={950}
+                width={750}
+                height={650}
                 priority
                 className="h-full w-full object-cover"
               />

@@ -5,7 +5,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { motion } from 'framer-motion'
 import React from "react";
-import { Mail, Phone, Facebook, Instagram, GithubIcon } from 'lucide-react';
+import { Mail, Phone, Facebook, Instagram, GithubIcon, Loader2Icon } from 'lucide-react';
 import { toast } from 'sonner'
 
 const schema = Yup.object({
@@ -86,7 +86,11 @@ export default function ContactSection() {
                     disabled={isSubmitting}
                     className="inline-flex items-center gap-2 rounded-lg bg-orange-600 px-6 py-3 text-white font-medium shadow-md transition hover:translate-y-[-1px] disabled:opacity-60"
                   >
-                    Envoyer
+                    {isSubmitting ? 
+                      <div className="flex flex-row items-center gap-4">
+                        <Loader2Icon className="h-5 w-5 animate-spin" /> Envoi...
+                      </div>
+                    : 'Envoyer'}
                   </button>
                 </div>
               </Form>

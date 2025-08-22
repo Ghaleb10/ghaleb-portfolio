@@ -3,6 +3,7 @@ import ContactSection from "../components/ContactSection"
 import { Hero } from "../components/Hero"
 import { ProjectGrid } from "../components/ProjectGrid"
 import { getProjects } from "../lib/projects"
+import Link from 'next/link'
 
 export default function Page() {
   const projects = getProjects()
@@ -13,6 +14,9 @@ export default function Page() {
       <section className="space-y-12">
         <h2 className="text-lg md:text-2xl xl:text-4xl font-bold">Projets récents</h2>
         <ProjectGrid projects={projects.slice(0,3)} />
+        <Link href="/projets" className="w-full py-4 flex justify-center items-center text-lg text-[#2563eb] font-semibold">
+          Voir mes projets
+        </Link>
       </section>
 
       <AboutSection
@@ -29,7 +33,7 @@ export default function Page() {
         email="saidalighaleb007@gmail.com"
         photoUrl="/me_diplome.jpg"
         stats={[
-          { label: 'Projets complétés', value: '20+' },
+          { label: 'Projets complétés', value: projects.length.toString() + '+' },
           // { label: 'Secteurs couverts', value: '25+' },
           { label: "Années d'expérience", value: '3+' },
         ]}

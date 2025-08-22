@@ -1,10 +1,13 @@
 import AboutSection from "../../components/AboutSection"
+import { getProjects } from "../../lib/projects"
 
 export const metadata = {
   title: 'À propos – Portfolio'
 }
 
 export default function AProposPage() {
+  const projects = getProjects();
+
   return (
     <div className="prose dark:prose-invert max-w-none mt-28">
       <AboutSection
@@ -21,7 +24,7 @@ export default function AProposPage() {
         email="saidalighaleb007@gmail.com"
         photoUrl="/me_diplome.jpg"
         stats={[
-          { label: 'Projets complétés', value: '20+' },
+          { label: 'Projets complétés', value: projects.length.toString() + '+' },
           // { label: 'Secteurs couverts', value: '25+' },
           { label: "Années d'expérience", value: '3+' },
         ]}
