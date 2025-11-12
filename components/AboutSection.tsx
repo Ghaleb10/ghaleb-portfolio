@@ -86,7 +86,7 @@ export default function AboutSection({
         </motion.div>
 
         {/* Bloc droit : Titre / Bio / Stats / Contact */}
-        <div className="order-1 space-y-7 lg:order-2">
+        <div className="order-1 space-y-7 lg:order-2 mt-6 md:mt-0">
           <motion.div {...fadeUp(0.05)} className="space-y-6">
             <p className="text-sm font-medium text-orange-600">A propos de moi</p>
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
