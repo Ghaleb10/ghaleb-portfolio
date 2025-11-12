@@ -54,6 +54,54 @@ Avec plus de **3 ans d’expérience**, j’ai participé à la création de pla
 
 ---
 
+### 🔹 Slir Environnement
+> Entreprise spécialisée dans l’assainissement industriel, intervenant dans la région Auvergne-Rhône-Alpes depuis plus de 35 ans. Services complets : curage, vidange, pompage, inspection télévisuelle, nettoyage de cuves, collecte et traitement des déchets.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
+### 🔹 Waldorfska
+> École alternative à Cracovie fondée sur la pédagogie Waldorf, proposant un enseignement holistique et créatif axé sur les arts et la nature.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
+### 🔹 Explorer
+> Marque italienne de yachts de luxe alliant design avant-gardiste, performance et savoir-faire artisanal.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
+### 🔹 NautiSphere
+> Entreprise du secteur nautique offrant du conseil et de la stratégie marketing aux acteurs de l’industrie maritime.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
+### 🔹 Agence AYA
+> Agence de design et d’architecture commerciale présente à Paris, Lyon, Genève, Sydney, Milan et New York. Spécialisée dans les showrooms, stands et concept stores.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
+### 🔹 Lover Pack
+> Boutique en ligne française spécialisée dans la vente de miels aphrodisiaques naturels produits en Malaisie. Livraison rapide et discrète.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
+### 🔹 Cosmetics Zen (DIVES MED)
+> Marque de produits cosmétiques et médicaux haut de gamme dédiée à la santé et à la beauté de la peau.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
+### 🔹 Salescare
+> Société française d’externalisation commerciale et de formations certifiées Qualiopi, spécialisée dans le B2B et l’hôtellerie.  
+**Stack :** Next.js • Tailwind • TypeScript • Framer Motion  
+
+---
+
 ## 📞 Contact
 
 📍 **Adresse :** 67Ha Nord-Est, Antananarivo 101  
