@@ -1,46 +1,99 @@
-# Portfolio Next.js 15 + Tailwind + Framer Motion
+# 🌐 Ghaleb – Portfolio Développeur React / Next.js
 
-Portfolio fluide, accessible et SEO-friendly. Pile : **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, **Framer Motion**.
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-149ECA?style=for-the-badge&logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-0EA5E9?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-EF4444?style=for-the-badge&logo=framer&logoColor=white)
+![Nodemailer](https://img.shields.io/badge/Nodemailer-2ECC71?style=for-the-badge)
 
-## 🚀 Démarrage rapide
+## 👋 À propos
+
+Je suis **El'Ghaleb Saïd Ali Mohamed**, développeur web **Front-End** spécialisé en **React** et **Next.js**, passionné par la conception d’interfaces modernes, fluides et performantes.  
+Avec plus de **3 ans d’expérience**, j’ai participé à la création de plateformes e-commerce, de systèmes temps réel et de sites vitrines interactifs.
+
+💡 **Mes priorités** :
+- Performance & accessibilité  
+- Expérience utilisateur fluide (UX/UI)  
+- Code propre, maintenable et scalable  
+- Collaboration et innovation continue  
+
+---
+
+## 🚀 Stack principale
+
+| Domaine | Technologies |
+|----------|---------------|
+| **Framework** | Next.js, React |
+| **Langage** | TypeScript |
+| **UI / Style** | TailwindCSS, ShadCN UI |
+| **Animations** | Framer Motion |
+| **État / Données** | Zustand, Prisma |
+| **Emailing** | Nodemailer |
+| **Autres** | Socket.IO, GitHub, Vercel |
+
+---
+
+## 🧩 Projets récents
+
+### 🔹 Steedy
+> Plateforme où les podcasteurs transforment leurs idées en expériences audio enrichissantes, tout en monétisant leur contenu.  
+**Stack :** React • Material UI • Framer Motion  
+
+---
+
+### 🔹 Mihgeh International
+> Société canadienne accompagnant les entreprises dans leur développement international et leur transformation digitale.  
+**Stack :** React • Next.js • TypeScript • Tailwind • Framer Motion  
+
+---
+
+### 🔹 ONYX IMK
+> Entreprise spécialisée en transformation numérique, cybersécurité et DevSecOps.  
+**Stack :** React • Next.js • TypeScript • Tailwind • Framer Motion  
+
+---
+
+## 📞 Contact
+
+📍 **Adresse :** 67Ha Nord-Est, Antananarivo 101  
+📧 **Email :** [saidalighaleb007@gmail.com](mailto:saidalighaleb007@gmail.com)  
+📱 **Téléphone :** (+261) 32 39 869 63  
+
+💬 **Discutons ensemble !**  
+[Visiter le site →](https://ghaleb-portfolio.vercel.app)
+
+---
+
+## 🧠 Expérience et réalisations
+
+- 🎯 **3+ ans d’expérience** dans le développement web moderne  
+- 🧩 **11+ projets complétés** avec une approche centrée sur l’utilisateur  
+- 💼 Expertise en **intégration front-end**, **design fonctionnel**, et **animations fluides**
+
+---
+
+## ⚙️ Installation et exécution
 
 ```bash
-pnpm i   # ou npm i / yarn
-pnpm dev # http://localhost:3000
+# Cloner le dépôt
+git clone https://github.com/ton-compte/ghaleb-portfolio.git
+
+# Aller dans le dossier
+cd ghaleb-portfolio
+
+# Installer les dépendances
+npm install
+
+# Lancer le projet en local
+npm run dev
 ```
 
-> Si Next 15 n'est pas encore disponible chez vous, remplacez la version de `next` par `"latest"` dans `package.json`.
+Le site sera disponible sur [http://localhost:3000](http://localhost:3000)
 
-## 🧩 Inclus
+---
 
-- App Router (`app/`), pages : Accueil, Projets, Détail projet, À propos, Contact.
-- Données mock JSON (`app/(data)/projects.json`).
-- Thème sombre/clair via `next-themes`.
-- Animations Framer Motion (stagger, fade/slide).
-- SEO : `generateMetadata`, `robots.ts`, `sitemap.ts`.
-- Tests : Vitest + Testing Library.
-- Tailwind configuré + styles globaux accessibles.
+## 📄 Licence
 
-## 📁 Scripts
-
-- `dev` – serveur de dev
-- `build` – build production
-- `start` – server production
-- `lint` – lint
-- `test` – tests Vitest
-
-## 🖼️ Images distantes
-
-Les images utilisent Unsplash/Picsum. Voir `next.config.ts` pour `remotePatterns`.
-
-## 🧪 Tests
-
-```bash
-pnpm test
-```
-
-## 🔧 À personnaliser
-
-- Remplacer `https://example.com` dans `metadataBase`, `robots.ts`, `sitemap.ts`.
-- Modifier `app/(data)/projects.json` avec vos vrais projets.
-- Adapter les styles Tailwind selon votre identité.
+Ce projet est protégé par la **Licence MIT**.  
+Vous pouvez l’utiliser, le modifier et le redistribuer librement, tant que la mention du créateur original est conservée.
